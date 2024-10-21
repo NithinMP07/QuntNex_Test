@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuntNex Login</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .login-container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      table {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      td {
+        padding: 10px;
+        text-align: left;
+        font-size: 16px;
+        color: #555;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        background-color: #17bbe4;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        width: 100%;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #40d747;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>QuntNex Login</h1>
+      <form action="quntnex.html" method="post">
+        <table>
+          <tr>
+            <td>Username:</td>
+            <td><input type="text" name="username" placeholder="Enter your username" pattern="[a-z_\.]+" title="Username should be in lowwer" required /></td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password" placeholder="Enter your password"  pattern="[A-Za-z_0-98\.]+" title="Paasword should contain less than 8 Character" required /></td>
+          </tr>
+        </table>
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+  </body>
+</html>
